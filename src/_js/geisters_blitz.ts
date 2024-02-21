@@ -49,7 +49,7 @@ export function correctItemFor(set: Set, card: Card) {
   const exactMatches = card.filter(image => items.some(item => match(image, item)))
   if (exactMatches.length === 1) return exactMatches[0]
   if (exactMatches.length > 1) {
-    console.info('Multiple exact matches', exactMatches, { card })
+    // console.info('Multiple exact matches', exactMatches, { card })
     return false
   }
 
@@ -58,7 +58,7 @@ export function correctItemFor(set: Set, card: Card) {
   const colorMismatch = items.filter(item => !imageColors.includes(item[0]))
   const colorAndShapeMismatch = colorMismatch.filter(item => !imageShapes.includes(item[1]))
   if (colorAndShapeMismatch.length === 1) return colorAndShapeMismatch[0]
-  console.info('Multiple remains', colorAndShapeMismatch, { card })
+  // console.info('Multiple remains', colorAndShapeMismatch, { card })
   return false
 }
 

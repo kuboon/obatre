@@ -1,0 +1,24 @@
+html {
+  background-color: black;
+  color: white
+}
+
+#card, #items {
+  display: flex;
+  justify-content: space-around;
+}
+
+#card svg {
+  width: 45vw;
+  height: 49vh;
+}
+#items svg {
+  width: 18vw;
+ }
+.correct { transform: scale(2);
+  transition: transform 0.5s;
+}
+
+footer {
+  font-size: x-small;
+}
