@@ -3,6 +3,21 @@ html {
   color: white
 }
 
+#score {
+  margin: 1.5vh 0;
+}
+#meter {
+  background-color: cadetblue;
+  height: 1vh;
+  width: 100%;
+  div {
+    background-color: yellow;
+    height: 100%;
+    transition: width 0.5s;
+    width: 0;
+  }
+}
+
 #card, #items {
   display: flex;
   justify-content: space-around;
@@ -15,8 +30,13 @@ html {
 #items svg {
   width: 18vw;
  }
-.correct { transform: scale(2);
-  transition: transform 0.5s;
+.correct {
+  transform: scale(2);
+  transition: all 0.5s;
+}
+.correct.hit {
+  stroke: yellow;
+  stroke-width: 1vmin;
 }
 
 footer {
