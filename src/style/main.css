@@ -27,9 +27,12 @@ html {
   width: 45vw;
   height: 49vh;
 }
-#items svg {
-  width: 18vw;
- }
+#items {
+  user-select: none;
+  svg {
+    width: 18vw;
+  }
+}
 .correct {
   transform: scale(2);
   transition: all 0.5s;
