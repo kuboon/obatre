@@ -12,7 +12,7 @@ export const RegularSet: Set = {
     ['green', 'bottle'],
     ['white', 'ghost'],
     ['gray', 'mouse'],
-    ['red', 'sofa'],
+    ['#d00', 'sofa'],
   ]
 }
 export const NineSet: Set = {
